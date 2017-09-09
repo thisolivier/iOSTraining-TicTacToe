@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTesting-Generic/ViewController.swift"
+            timestampString = "526608436.780584"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ToeButton"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTesting_Generic.ToeButton.__deallocating_deinit"
+                  moduleName = "iOSTesting-Generic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olivier/Sites/DojoAssignments/iOS/Intro%20to%20iOS/iOSTesting-Generic/iOSTesting-Generic/iOSTesting-Generic/ViewController.swift"
+                  timestampString = "526607051.77015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTesting_Generic.ToeButton.__allocating_init(frame: __C.CGRect) -&gt; iOSTesting_Generic.ToeButton"
+                  moduleName = "iOSTesting-Generic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olivier/Sites/DojoAssignments/iOS/Intro%20to%20iOS/iOSTesting-Generic/iOSTesting-Generic/iOSTesting-Generic/ViewController.swift"
+                  timestampString = "526607051.773473"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOSTesting_Generic.ToeButton.init(frame: __C.CGRect) -&gt; iOSTesting_Generic.ToeButton"
+                  moduleName = "iOSTesting-Generic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olivier/Sites/DojoAssignments/iOS/Intro%20to%20iOS/iOSTesting-Generic/iOSTesting-Generic/iOSTesting-Generic/ViewController.swift"
+                  timestampString = "526607051.775752"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

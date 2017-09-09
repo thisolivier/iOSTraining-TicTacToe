@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSTesting_Generic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-9R-W8C">
+                                <rect key="frame" x="16" y="20" width="343" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tickle my Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUs-ww-5Kf">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1K3-3O-dAD">
+                                <rect key="frame" x="16" y="509" width="343" height="59"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who da Boss?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0i-H9-J63">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z4h-cP-wXB">
+                                <rect key="frame" x="16" y="588" width="343" height="59"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnM-u9-QKh">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tDI-jk-wes"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="U8F-cg-RSf"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vxe-TY-jna">
+                                <rect key="frame" x="16" y="99" width="343" height="390"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-jF-V9D">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="126.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8A-wY-hkh" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="126.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UhT-IQ-AOy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKD-2E-1X7" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="116.5" y="0.0" width="110" height="126.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7m-vi-inP"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nV-Uz-WPj" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="232.5" y="0.0" width="110.5" height="126.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hqc-Dr-yIN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zy5-I3-aIN">
+                                        <rect key="frame" x="0.0" y="131.5" width="343" height="127"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKP-mI-IRM" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="127"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbQ-Im-DCU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lh-fb-suX" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="116" y="0.0" width="111" height="127"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHW-v7-dkH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PwB-YB-NOr" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="111" height="127"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rW-tN-NJX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wYS-Ik-ZXa">
+                                        <rect key="frame" x="0.0" y="263.5" width="343" height="126.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJa-9r-sfw" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="126.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQG-so-ZEk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKg-ew-lKk" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="116" y="0.0" width="111" height="126.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJW-b1-AEX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-zt-Fg6" customClass="ToeButton" customModule="iOSTesting_Generic" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="111" height="126.5"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udR-lC-qvU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1K3-3O-dAD" firstAttribute="top" secondItem="Vxe-TY-jna" secondAttribute="bottom" constant="20" id="1Ua-9I-i61"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vxe-TY-jna" secondAttribute="trailing" constant="16" id="5HC-hs-fXc"/>
+                            <constraint firstItem="z4h-cP-wXB" firstAttribute="top" secondItem="1K3-3O-dAD" secondAttribute="bottom" constant="20" id="9oU-Yd-Vvt"/>
+                            <constraint firstItem="eFv-9R-W8C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AG3-RF-yb2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z4h-cP-wXB" secondAttribute="trailing" constant="16" id="KGT-ag-5lf"/>
+                            <constraint firstItem="1K3-3O-dAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mnc-3D-b9x"/>
+                            <constraint firstItem="eFv-9R-W8C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QII-7H-Nhh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eFv-9R-W8C" secondAttribute="trailing" constant="16" id="ern-va-58I"/>
+                            <constraint firstItem="Vxe-TY-jna" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hlA-ic-R1S"/>
+                            <constraint firstItem="z4h-cP-wXB" firstAttribute="height" secondItem="eFv-9R-W8C" secondAttribute="height" id="rmz-09-CKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1K3-3O-dAD" secondAttribute="trailing" constant="16" id="urN-BC-Jmk"/>
+                            <constraint firstItem="z4h-cP-wXB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vRI-79-rsh"/>
+                            <constraint firstItem="Vxe-TY-jna" firstAttribute="top" secondItem="eFv-9R-W8C" secondAttribute="bottom" constant="20" id="vsr-U5-NQM"/>
+                            <constraint firstItem="z4h-cP-wXB" firstAttribute="height" secondItem="1K3-3O-dAD" secondAttribute="height" id="xX4-Wz-AJ3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z4h-cP-wXB" secondAttribute="bottom" constant="20" id="xhN-Vz-rP6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="FUs-ww-5Kf" id="62n-WY-aBk"/>
+                        <outlet property="whoWonLabel" destination="q0i-H9-J63" id="qym-lS-8tr"/>
+                        <outletCollection property="buttonGroup" destination="8nV-Uz-WPj" collectionClass="NSMutableArray" id="cwI-MM-1hr"/>
+                        <outletCollection property="buttonGroup" destination="fKD-2E-1X7" collectionClass="NSMutableArray" id="blY-5A-J6I"/>
+                        <outletCollection property="buttonGroup" destination="l8A-wY-hkh" collectionClass="NSMutableArray" id="meS-IN-YAQ"/>
+                        <outletCollection property="buttonGroup" destination="PwB-YB-NOr" collectionClass="NSMutableArray" id="c4s-YO-rqb"/>
+                        <outletCollection property="buttonGroup" destination="1lh-fb-suX" collectionClass="NSMutableArray" id="vyd-Tm-kj6"/>
+                        <outletCollection property="buttonGroup" destination="fKP-mI-IRM" collectionClass="NSMutableArray" id="1Zt-bD-v9y"/>
+                        <outletCollection property="buttonGroup" destination="kpK-zt-Fg6" collectionClass="NSMutableArray" id="f5a-Iw-e0v"/>
+                        <outletCollection property="buttonGroup" destination="bKg-ew-lKk" collectionClass="NSMutableArray" id="cOA-EQ-H43"/>
+                        <outletCollection property="buttonGroup" destination="hJa-9r-sfw" collectionClass="NSMutableArray" id="VuP-kH-yZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
